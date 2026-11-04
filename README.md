@@ -29,17 +29,21 @@ java TodoApp
 - Handling user input with `Scanner`
 - Using loops, `switch`, and exception handling
 
-## Future Improvements
-- Save tasks to a file
-- Add due dates
-- Convert to a fully object-oriented design
-
-- ## Demo
+## Demo
 
 ```
 === Welcome to My To-Do App ===
 
 1. Add task
+2. Show tasks
+...
+```
+
+## Future Improvements
+
+- Save tasks to a file
+- Add due dates
+- Move `Task` into its own file
 2. Show tasks
 ...
 Total: 3 | Done: 1 | Progress: 33%
