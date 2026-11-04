@@ -16,7 +16,7 @@ A beginner-friendly console To-Do List application written in Java. It runs in t
 
 ## How to Run
 1. Clone the repo:
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Badboyrealna/Todo-app.git
 2. Open the folder in a terminal.
 3. Compile and run:
    javac TodoApp.java
