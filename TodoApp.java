@@ -26,6 +26,35 @@ public class TodoApp {
 
     private static final List<Task> tasks = new ArrayList<>();
     private static final Scanner scanner = new Scanner(System.in);
+    private static final Path SAVE_FILE = Paths.get("tasks.txt");
+
+private static void saveTasks() {
+    List<String> lines = new ArrayList<>();
+    for (Task t : tasks) {
+        lines.add((t.done ? "1" : "0") + "|" + t.title);
+    }
+    try {
+        Files.write(SAVE_FILE, lines);
+    } catch (IOException e) {
+        System.out.println("Could not save tasks: " + e.getMessage());
+    }
+}
+
+private static void loadTasks() {
+    if (!Files.exists(SAVE_FILE)) return;
+    try {
+        for (String line : Files.readAllLines(SAVE_FILE)) {
+            String[] parts = line.split("\\|", 2);
+            if (parts.length == 2) {
+                Task t = new Task(parts[1]);
+                t.done = parts[0].equals("1");
+                tasks.add(t);
+            }
+        }
+    } catch (IOException e) {
+        System.out.println("Could not load tasks: " + e.getMessage());
+    }
+}
 
     public static void main(String[] args) {
         System.out.println("=== Welcome to My To-Do App ===");
