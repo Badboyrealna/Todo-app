@@ -15,12 +15,13 @@ A beginner-friendly console To-Do List application written in Java. It runs in t
 - No external libraries needed
 
 ## How to Run
-1. Clone the repo:
-   git clone https://github.com/Badboyrealna/Todo-app.git
-2. Open the folder in a terminal.
-3. Compile and run:
-   javac TodoApp.java
-   java TodoApp
+
+```
+git clone https://github.com/Badboyrealna/Todo-app.git
+cd Todo-app
+javac TodoApp.java
+java TodoApp
+```
 
 ## What I Learned
 - Using classes and objects (the `Task` class)
