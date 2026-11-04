@@ -33,3 +33,14 @@ java TodoApp
 - Save tasks to a file
 - Add due dates
 - Convert to a fully object-oriented design
+
+- ## Demo
+
+```
+=== Welcome to My To-Do App ===
+
+1. Add task
+2. Show tasks
+...
+Total: 3 | Done: 1 | Progress: 33%
+```
